@@ -76,7 +76,7 @@ namespace StudentUMLExample
         /// <returns>The current state of the class</returns>
         public override string ToString()
         {
-            string output = $"{FirstName} {LastName} {SoonerID}";
+            string output = $"{FirstName} {LastName} ({SoonerID})";
             if (IsOnProbation == true)
             {
                 output += "is on probation.\n";
@@ -87,8 +87,9 @@ namespace StudentUMLExample
             }
             
             output += $"They have a {GPA.ToString("N2")} GPA" + 
-                $"and they owe {BursarBalance}";
-            return base.ToString();
+                $" and they owe {BursarBalance.ToString("C2")}";
+            
+            return output;
         }
     }
 }
