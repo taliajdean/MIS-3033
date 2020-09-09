@@ -1,0 +1,36 @@
+﻿<Window x:Class="IntrotoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntrotoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFFFEAFF">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="113*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="657,260,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="755,347,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Welcome to MIS 3033" HorizontalAlignment="Left" Margin="755,227,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="82.07"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Welcome to MIS 3033" HorizontalAlignment="Left" Height="110" Margin="30,10,0,0" VerticalAlignment="Top" Width="740" FontSize="72" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="218,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" Height="46" Grid.ColumnSpan="2" TextChanged="txt1_TextChanged"/>
+        <Label x:Name="label" Content="Enter Name:" HorizontalAlignment="Left" Margin="30,143,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="btnGo" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="657,185,0,0" VerticalAlignment="Top" Width="0"/>
+        <Button x:Name="btnGo1" Content="Go!" Grid.Column="1" HorizontalAlignment="Left" Height="156" Margin="283,151,0,0" VerticalAlignment="Top" Width="222" Click="btnGo1_Click" FontSize="72"/>
+        <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="198,434,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Enter Birthday:" HorizontalAlignment="Center" Margin="0,276,0,0" VerticalAlignment="Top" Height="77" Width="195" FontSize="24"/>
+        <TextBox x:Name="txtDate" Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="0,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
